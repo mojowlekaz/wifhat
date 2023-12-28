@@ -10,8 +10,6 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
-      <Stake />
-      <Footer />
     </div>
   );
 }

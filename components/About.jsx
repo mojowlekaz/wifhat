@@ -1,4 +1,5 @@
 import React from "react";
+import Stake from "./Stake";
 
 export default function About() {
   const content = [
@@ -34,12 +35,12 @@ export default function About() {
         {content.map((texts, index) => (
           <div
             style={{ border: "1px solid #2E8F01" }}
-            className="w-[541px] h-[240px] flex flex-shrink-0 justify-center items-center  bg-black bg-opacity-90 rounded-3xl shadow border "
+            className="w-[441px] h-[240px] flex flex-shrink-0 justify-center items-center  bg-black bg-opacity-90 rounded-3xl shadow border "
           >
             <div key={index}>
               <p
                 style={{ color: "#2E8F01" }}
-                className=" text-center  text-[20px] font-medium "
+                className=" text-center  text-[15px] font-medium "
               >
                 {texts.text}
               </p>
@@ -47,6 +48,7 @@ export default function About() {
           </div>
         ))}
       </div>
+      <Stake />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Footer from "./Footer";
 
 export default function Stake() {
   const charts = [
@@ -11,7 +12,10 @@ export default function Stake() {
     },
   ];
   return (
-    <div className="flex justify-center bg-black h-screen items-center">
+    <div className="flex flex-col relative gap-3 justify-center bg-black h-full  items-center">
+      <h1 className="text-white font-bold text-[20px]">
+        Blast Off with Hyperscaling ZkRevolution
+      </h1>
       <div
         style={{ border: "1px solid #38D3D3" }}
         className="w-[870px] h-[489px] px-10 pt-8 bg-black bg-opacity-90 rounded-3xl shadow border "
@@ -38,6 +42,7 @@ export default function Stake() {
           </p>
         </button>
       </div>
+      <Footer />
     </div>
   );
 }
